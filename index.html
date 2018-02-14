@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Jakeib Larmteknik">
+    <meta name="author" content="Jacob Lindgren">
+
+    <title>Jakeib Larmteknik - Startsida</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Egengjord css -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+	<link rel="stylesheet" href="slider.css">
+
+  </head>
+  <script>
+    var imgArray = [
+        'bilder/ssbild.png',
+        'bilder/ssbild.png',
+        'bilder/ssbild.png'],
+        curIndex = 0;
+        imgDuration = 5000;
+
+    function slideShow() {
+        document.getElementById('image1').src = imgArray[curIndex];
+        curIndex++;
+        if (curIndex == imgArray.length) { curIndex = 0; }
+        setTimeout("slideShow()", imgDuration);
+    }
+    slideShow();
+</script>
+
+  <body id="page-top">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Jakeiblarm</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Tjänster</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">Om oss</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Kontakta oss</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Driftinformation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   <div id="p" class="container">
+	<img id="image1" />
+    <header class="text-white">
+      <div class="container text-center">
+        <h1>Välkommen till Jakeiblarm</h1>
+        <p class="lead">Här kommer det snart rörliga bilder!</p>
+		
+		</div>
+      </div>
+	  </div>
+    </header>
+
+    <section id="services">
+      <div class="container">
+        <div class="row">
+		  <ul class="kopbild">
+				<li><a href="#"><img src="bilder/buy1.png" ></a>
+				<li><a href="#"><img src="bilder/buy1.png" ></a>
+				<li><a href="#"><img src="bilder/buy1.png" ></a>
+			</ul>
+			<div class="col-lg-8 mx-auto">
+            <h2><br /><br /><br />Jakeib Larmteknik - Bästa larmföretaget i Stockholm</h2>
+			
+            <p class="lead">Söker du övervakning, brandlarm, passersystem eller inbrottslarm med hög kvalité? Då har du kommit rätt. Jakeib Larmteknik är ett företag med flera år av erfarenhet inom larmteknik. Våra tekniker är både utbildade och är erfarna inom de olika typerna utav larm och övervakning..
+Här på Jakeib Larmteknik tar vi kunderna på största allvar och ser till att larmet är installerat och anpassat på bästa sätt. Vi skräddarsyr produkten till dina behov och på så sätt får du det bästa utav ditt köp.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Om oss</h2>
+            <p class="lead">Info här</p>	
+			</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+		  
+            <h2>Kontakta oss</h2>
+            <p class="lead">
+				<form action="https://formspree.io/jakeib1337@gmail.com" method="POST">
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="firstname" placeholder="Ditt namn..">
+				<label for="email">Email</label>
+				<input type="text" id="email" name="_replyto" placeholder="Din email..">
+				 <label for="subject">Beskrivning</label>
+				<textarea id="subject" name="subject" placeholder="Skriv något.." style="height:200px"></textarea>
+				<input type="submit" value="Send">
+				</form>
+			</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; JakeibLarm 2018</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Javascript som är gjord för denna sida -->
+    <script src="js/scrolling-nav.js"></script>
+
+  </body>
+
+</html>
